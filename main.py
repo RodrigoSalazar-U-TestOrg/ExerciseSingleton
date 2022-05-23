@@ -13,7 +13,7 @@ class WindowRenderer(metaclass=SingletonMeta):
         self.pixels = []
 
     def resize_window(self, size_x, size_y):
-        self.pixels = [["*" for x in range(size_x)] for y in range(size_y)]
+        self.pixels = [["*" for _ in range(size_x)] for _ in range(size_y)]
 
     def display(self):
         for row in self.pixels:
